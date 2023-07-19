@@ -1,0 +1,280 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#logo{
+    margin: 5px 40px;
+    margin-right: 10px;
+}
+
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 45%;
+}
+
+#name{
+    color: rgb(219, 147, 13);
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+/* Introduction */
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 150px;
+    height: 150px;
+}
+
+#intro::before{
+    content: "";
+    position: absolute;
+    background: url('img/piz1.jpg') no-repeat center center/cover;
+    opacity: 0.7;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+}
+
+#intro h1{
+    color: bisque;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 150px;
+    font-size: 3rem;
+}
+
+
+/* Booking */
+#book-table{
+    margin-top: 172px;
+    display: flex;
+    flex-direction: row;
+}
+#book-info{
+    margin: 40px;
+    font-size: 1.5rem;
+}
+#book-info h1{
+    text-align: center;
+    color: green;
+}
+#book-info p{
+    margin: 20px;
+    padding: 3px;
+}
+#book-form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-right: 20px;
+    background-color: orange;
+    color: aliceblue;
+}
+#book-form label{
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+#book-form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border: 1.5px solid white;
+    background: none;
+}
+#book-now{
+    width: 100%;
+    border: none;
+    color: orange;
+    padding: 10px 12px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+#book-now:hover{
+    border: 1.5px solid white;
+    background: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+#book-form ::placeholder{
+    color: aliceblue;
+}
+
+/* Features */
+#features{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: rgba(228, 223, 223, 0.925);
+}
+.left{
+    width: 40%;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.left img{
+    height:400px;
+    width: 500px;
+    margin: 25px 0px;
+    border-radius: 10px;
+}
+.left h4{   
+    color: green;
+    font-size: 1.5rem;
+}
+.left h1{
+    color: orange;
+    font-size: 2.1rem;
+}
+.left p{
+    color: rgb(68, 66, 66);
+    font-size: 1.5rem;
+}
+.right{
+    width: 60%;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    margin-top: 70px;
+}
+.quality{
+    
+    margin: 10px 20px;
+    padding: 5px 10px;
+}
+.quality h4{
+    color: orange;
+    font-size: 2.1rem;
+}
+.quality p{
+    color: green;
+    font-size: 1.5rem;
+}
+
+/* Menu */
+#menu{
+    margin-top: 50px;
+    color:blueviolet;
+}
+#menu h2{
+    text-align: center;
+    font-size: 2rem;
+}
+#food-menu{
+    display: flex;
+
+}
+.container{
+    width: 60%;
+    margin: 10px;
+}
+.item{
+    display: flex;
+    flex-direction: row; 
+    margin: 20px 5px;
+
+}
+.item img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.details{
+    margin: 20px 5px;
+    font-size: 1.2rem;
+}
+.details span{
+    color: orange;
+}
+.details p{
+    color: rgb(68, 66, 66);
+}
+#poster{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+#poster img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* Contact us */
+#contact{
+    margin-top: 20px;
+    background-color: rgba(228, 223, 223, 0.925);
+}
+#contact h1{
+    color: orange;
+    text-align: center;
+    font-size: 2rem;
+}
+#contact-info{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact-info h3{
+    color: green;
+}
+.address,
+.call,
+.email,
+.followus{
+    display: flex;
+    flex-direction: row;
+}
+
+.address img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.call img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.email img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.followus img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.followus div img{
+    width: 140px;
+    height: 25px;
+    border-radius: 0;
+}
+.det{
+    margin: 7px 5px;
+
+}
